@@ -14,7 +14,7 @@ const RegisterPage = () => {
         onSubmit={submitHandler}
         className="flex flex-col gap-2 bg-blue-200 p-6 rounded-lg shadow-lg"
       >
-        <h1 className="text-center text-2xl font-bold my-2">Register Form</h1>
+        <h1 className="text-center text-2xl font-bold mb-2">Register Form</h1>
         <label htmlFor="username" className="font-semibold text-lg">
           Username
         </label>
@@ -63,12 +63,16 @@ const RegisterPage = () => {
             submit
           </button>
         </div>
-        <span className="text-sm text-slate-700">
-          Already have account?{" "}
-          <Link to="/login" className="text-sm font-bold text-red-800">
-            login
-          </Link>
-        </span>
+        <div className="flex gap-2 items-baseline">
+          <span className="text-sm text-slate-700 font-semibold">
+            Already have account?
+          </span>
+          <span>
+            <Link to="/login" className="text-[16px] font-bold text-blue-800">
+              login
+            </Link>
+          </span>
+        </div>
       </form>
     </div>
   );
