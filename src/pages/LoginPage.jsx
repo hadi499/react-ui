@@ -7,7 +7,7 @@ const LoginPage = () => {
 
   const submitHandler = () => {};
   return (
-    <div className="mt-6 w-[400px] mx-auto">
+    <div className="mt-14 w-[400px] mx-auto">
       <form
         onSubmit={submitHandler}
         className="flex flex-col gap-2 bg-blue-200 p-6 rounded-lg shadow-lg"
